@@ -18,4 +18,4 @@ meadowgreen = Color(0x8ed334, 1.0)
 orange = Color(0xe59e19, 1.0)
 
 thinline = LineStyle(1, black)
-noline = LineStyle(0,
+noline = LineStyle(0, black)
