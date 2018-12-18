@@ -19,3 +19,10 @@ orange = Color(0xe59e19, 1.0)
 
 thinline = LineStyle(1, black)
 noline = LineStyle(0, black)
+
+class Pong(App):
+    def __init__(self):
+        super().__init__()
+        bg_asset = ImageAsset("images/starfield.jpg")
+        bg = Sprite(bg_asset, (0, 0))
+        bg.scale = 2
