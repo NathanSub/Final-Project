@@ -22,7 +22,7 @@ noline = LineStyle(0, black)
 
 
 class Paddle1(Sprite):
-    
+    ImageAsset("pingpongpaddle1.jpg")
     
 class Paddle2(Sprite):
 
