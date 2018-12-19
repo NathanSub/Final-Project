@@ -20,6 +20,13 @@ orange = Color(0xe59e19, 1.0)
 thinline = LineStyle(1, black)
 noline = LineStyle(0, black)
 
+
+class Paddle1(Sprite):
+    
+    
+class Paddle2(Sprite):
+
+
 class Pong(App):
     def __init__(self):
         super().__init__()
