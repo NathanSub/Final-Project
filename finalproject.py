@@ -24,7 +24,7 @@ class Pong(App):
     def __init__(self):
         super().__init__()
         bg_asset = ImageAsset("images/tenniscourt1.jpg")
-        bg = Sprite(bg_asset, (-100, -100))
+        bg = Sprite(bg_asset, (-100, -130))
         bg.scale = 2
     
         
