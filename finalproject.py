@@ -26,3 +26,8 @@ class Pong(App):
         bg_asset = ImageAsset("images/starfield.jpg")
         bg = Sprite(bg_asset, (0, 0))
         bg.scale = 2
+        
+myapp = Pong
+
+myapp.run()
+        
