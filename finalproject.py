@@ -27,7 +27,7 @@ class Pong(App):
         bg = Sprite(bg_asset, (0, 0))
         bg.scale = 2
         
-myapp = Pong
+myapp = Pong()
 
 myapp.run()
         
