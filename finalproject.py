@@ -22,8 +22,8 @@ noline = LineStyle(0, black)
 
 
 class Paddle1(Sprite):
-    def __init__(self):
-        paddle1asset = ImageAsset("pingpongpaddle1.jpg")
+    paddle1 = ImageAsset("pingpongpaddle1.jpg"),
+    Frame(227,0,65,125), 4, 'vertical')
     
 class Paddle2(Sprite):
 
