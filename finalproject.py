@@ -40,4 +40,3 @@ class Pong(App):
 myapp = Pong()
 
 myapp.run()
-        
