@@ -34,15 +34,14 @@ class Paddle1(Sprite):
         self.thrustframe = 1
         self.center = (0.5, 0.5)
 
-        SpaceShooter.listenKeyEvent("keydown", "right arrow", self.rightarrowKey)
-        SpaceShooter.listenKeyEvent('keydown', "left arrow", self.leftarrowKey)
-        SpaceShooter.listenKeyEvent('keydown', "up arrow", self.uparrowKey)
-        SpaceShooter.listenKeyEvent('keydown', "down arrow", self.downarrowKey)
+        Pong.listenKeyEvent("keydown", "right arrow", self.rightarrowKey)
+        Pong.listenKeyEvent('keydown', "left arrow", self.leftarrowKey)
+        Pong.listenKeyEvent('keydown', "up arrow", self.uparrowKey)
+        Pong.listenKeyEvent('keydown', "down arrow", self.downarrowKey)
         
                 
     def rightarrowKey(self, event):
         self.vx+=.2
-        '''print(ImageAsset("images/blast.png"))'''
         
     def leftarrowKey(self, event):
         self.vx+=-.2
@@ -57,9 +56,6 @@ class Paddle1(Sprite):
     def step(self):
         self.x += self.vx
         self.y += self.vy
-        self.rotation += self.vr
-        collision = self.collidi
-
 
 class Pong(App):
     def __init__(self):
