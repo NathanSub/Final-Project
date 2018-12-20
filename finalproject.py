@@ -24,7 +24,41 @@ noline = LineStyle(0, black)
 class Paddle1(Sprite):
     paddle1 = ImageAsset("pingpongpaddle1.jpg",
     Frame(227,0,65,125), 4, 'vertical')
+    
+    def __init__(self, position):
+        super().__init__(Paddle1.paddle1, position)
+        self.vx = 1
+        self.vy = 1
+        self.vr = 0.01
+        self.thrust = 0
+        self.thrustframe = 1
+        self.center = (0.5, 0.5)
 
+        SpaceShooter.listenKeyEvent("keydown", "right arrow", self.rightarrowKey)
+        SpaceShooter.listenKeyEvent('keydown', "left arrow", self.leftarrowKey)
+        SpaceShooter.listenKeyEvent('keydown', "up arrow", self.uparrowKey)
+        SpaceShooter.listenKeyEvent('keydown', "down arrow", self.downarrowKey)
+        
+                
+    def rightarrowKey(self, event):
+        self.vx+=.2
+        '''print(ImageAsset("images/blast.png"))'''
+        
+    def leftarrowKey(self, event):
+        self.vx+=-.2
+        
+    def uparrowKey(self, event):
+        self.vy+=-.2
+        
+    def downarrowKey(self, event):
+        self.vy+=.2
+
+
+    def step(self):
+        self.x += self.vx
+        self.y += self.vy
+        self.rotation += self.vr
+        collision = self.collidi
 
 
 class Pong(App):
