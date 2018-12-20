@@ -36,7 +36,6 @@ class Pong(App):
         bg.scale = 2
         self.paddle1 = Paddle1((500, 30))
     
-        
 myapp = Pong()
 
 myapp.run()
