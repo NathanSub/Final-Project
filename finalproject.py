@@ -49,7 +49,15 @@ class Ball(Sprite):
             self.thrustframe = 1
         else:
             self.setImage(0)
-    def collidingWithSprites(sun, sclass = None):
+            
+    def collidingWithSprites(Borderleft, sclass = None):
+        if sclass is None:
+            slist = App.spritelist
+        else:
+            slist = App.getSpritesbyClass(sclass)
+        return list(filter(self.collidingWith, slist))
+        
+    def collidingWithSprites(Borderright, sclass = None):
         if sclass is None:
             slist = App.spritelist
         else:
