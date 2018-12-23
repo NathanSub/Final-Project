@@ -56,6 +56,37 @@ class Paddle1(Sprite):
 
 class Paddle2(Sprite):
     paddle2 = RectangleAsset(100, 500, thinline, red)
+    
+    def __init__(self, position):
+        super().__init__(Paddle2.paddle2, position)
+        self.vx = 1
+        self.vy = 1
+        self.center = (0.5, 0.5)
+        self.scale = 0.2
+
+        Pong.listenKeyEvent("keydown", "right arrow", self.rightarrowKey)
+        Pong.listenKeyEvent('keydown', "left arrow", self.leftarrowKey)
+        Pong.listenKeyEvent('keydown', "up arrow", self.uparrowKey)
+        Pong.listenKeyEvent('keydown', "down arrow", self.downarrowKey)
+        
+                
+    def rightarrowKey(self, event):
+        self.vx+=.2
+        
+    def leftarrowKey(self, event):
+        self.vx+=-.2
+        
+    def uparrowKey(self, event):
+        self.vy+=-.2
+        
+    def downarrowKey(self, event):
+        self.vy+=.2
+
+
+    def step(self):
+        self.x += self.vx
+        self.y += self.vy
+
 
 class Pong(App):
     def __init__(self):
