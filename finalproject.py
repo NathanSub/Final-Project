@@ -102,11 +102,21 @@ class Paddle2(Sprite):
         self.gfx = GFX_Graphics.drawPolygon(jpath).clone()
         self.gfx.visible = True          '''
         
-class Arena(Sprite):
+''' class Arena(Sprite):
     arena = RectangleAsset(4000, 2000, whiteline, clear)
 
     def __init__(self, position):
         super().__init__(Arena.arena, position)
+        self.vx = 1
+        self.vy = 1
+        self.center = (0.5, 0.5)
+        self.scale = 0.2    '''
+        
+class Borderleft(Sprite):
+    borderleft = RectangleAsset(100, 2000, whiteline, red)
+
+    def __init__(self, position):
+        super().__init__(Borderleft.borderleft, position)
         self.vx = 1
         self.vy = 1
         self.center = (0.5, 0.5)
@@ -123,7 +133,7 @@ class Pong(App):
         
         self.paddle2 = Paddle2((935, 275))
         
-        self.arena = Arena((520, 250))
+        self.borderleft = Borderleft((520, 250))
     
 myapp = Pong()
 
