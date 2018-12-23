@@ -22,7 +22,7 @@ noline = LineStyle(0, black)
 
 
 class Paddle1(Sprite):
-    paddle1 = ImageAsset("images/tennisracket1.png")
+    paddle1 = RectangleAsset(300, 200, thinline, red)
     
     def __init__(self, position):
         super().__init__(Paddle1.paddle1, position)
