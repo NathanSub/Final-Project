@@ -89,7 +89,7 @@ class Paddle2(Sprite):
         self.x += self.vx
         self.y += self.vy
 
-class PolygonAsset(Sprite):
+''' class PolygonAsset(Sprite):
     def __init__(self, path, line=whiteline, fill=orange):
         super().__init__(line, fill)
         self.path = path[:]
@@ -99,7 +99,7 @@ class PolygonAsset(Sprite):
         for point in self.path:
             jpath.extend(point)
         self.gfx = GFX_Graphics.drawPolygon(jpath).clone()
-        self.gfx.visible = True
+        self.gfx.visible = True          '''
         
     
 # class Arena(Sprite):
