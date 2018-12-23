@@ -9,6 +9,7 @@ from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, El
 from ggame import ImageAsset, Frame, Sound, SoundAsset, TextAsset
 
 white = Color(0xffffff, 1.0)
+clear = Color(0xffffff, 0)
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
@@ -102,7 +103,7 @@ class Paddle2(Sprite):
         self.gfx.visible = True          '''
         
 class Arena(Sprite):
-    arena = RectangleAsset(50, 600, whiteline, red)
+    arena = RectangleAsset(50, 600, whiteline, clear)
 
     def __init__(self, position):
         super().__init__(Paddle1.paddle1, position)
