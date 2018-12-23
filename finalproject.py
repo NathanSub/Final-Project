@@ -124,7 +124,7 @@ class Paddle2(Sprite):
 
         
 class Borderleft(Sprite):
-    borderleft = RectangleAsset(100, 2000, whiteline, red)
+    borderleft = RectangleAsset(100, 2000, whiteline, blue)
 
     def __init__(self, position):
         super().__init__(Borderleft.borderleft, position)
@@ -134,7 +134,7 @@ class Borderleft(Sprite):
         self.scale = 0.2
         
 class Borderright(Sprite):
-    borderright = RectangleAsset(100, 2000, whiteline, red)
+    borderright = RectangleAsset(100, 2000, whiteline, blue)
 
     def __init__(self, position):
         super().__init__(Borderright.borderright, position)
