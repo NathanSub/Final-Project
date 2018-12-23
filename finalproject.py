@@ -97,7 +97,7 @@ class Pong(App):
         
         self.paddle1 = Paddle1((100, 300))
         
-        self.paddle2 = Paddle2((900, 300))
+        self.paddle2 = Paddle2((940, 300))
     
 myapp = Pong()
 
