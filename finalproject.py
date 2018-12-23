@@ -99,7 +99,7 @@ class PolygonAsset(Sprite):
         for point in self.path:
             jpath.extend(point)
         self.gfx = GFX_Graphics.drawPolygon(jpath).clone()
-        self.gfx.visible = False
+        self.gfx.visible = True
         
     
 # class Arena(Sprite):
