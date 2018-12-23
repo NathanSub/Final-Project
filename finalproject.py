@@ -114,7 +114,7 @@ class Borderright(Sprite):
         self.scale = 0.2
         
 class Bordertop(Sprite):
-    bordertop = RectangleAsset(3000, 100, whiteline, green)
+    bordertop = RectangleAsset(4000, 100, whiteline, green)
 
     def __init__(self, position):
         super().__init__(Bordertop.bordertop, position)
@@ -124,7 +124,7 @@ class Bordertop(Sprite):
         self.scale = 0.2
         
 class Borderbottom(Sprite):
-    borderbottom = RectangleAsset(3000, 100, whiteline, green)
+    borderbottom = RectangleAsset(4000, 100, whiteline, green)
 
     def __init__(self, position):
         super().__init__(Borderbottom.borderbottom, position)
