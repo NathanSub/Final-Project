@@ -90,7 +90,7 @@ class Paddle2(Sprite):
         self.y += self.vy
 
 class PolygonAsset(Sprite):
-    def __init__(self, path, line=whiteline, fill=red):
+    def __init__(self, path, line=whiteline, fill=orange):
         super().__init__(line, fill)
         self.path = path[:]
         jpath = []
