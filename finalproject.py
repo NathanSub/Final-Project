@@ -127,6 +127,10 @@ class Pong(App):
         self.borderleft = Borderleft((80, 265))
 
         self.borderright = Borderright((952, 265))
+        
+        self.bordertop = Bordertop((400, 100))
+        
+        self.borderbottom = Borderbottom ((400, 400))
     
 myapp = Pong()
 
