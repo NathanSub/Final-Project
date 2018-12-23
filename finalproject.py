@@ -3,6 +3,8 @@ This is the code for Nathan Subrahmanian's Final Project!
 
 Sources:
 
+https://ggame-dev.readthedocs.io/en/latest/_modules/ggame/asset.html#PolygonAsset
+
 '''
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
