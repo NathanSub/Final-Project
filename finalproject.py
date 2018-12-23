@@ -31,10 +31,10 @@ class Paddle1(Sprite):
         self.center = (0.5, 0.5)
         self.scale = 0.2
 
-        Pong.listenKeyEvent("keydown", "right arrow", self.rightarrowKey)
-        Pong.listenKeyEvent('keydown', "left arrow", self.leftarrowKey)
-        Pong.listenKeyEvent('keydown', "up arrow", self.uparrowKey)
-        Pong.listenKeyEvent('keydown', "down arrow", self.downarrowKey)
+        Pong.listenKeyEvent("keydown", "d", self.rightarrowKey)
+        Pong.listenKeyEvent('keydown', "a", self.leftarrowKey)
+        Pong.listenKeyEvent('keydown', "w", self.uparrowKey)
+        Pong.listenKeyEvent('keydown', "s", self.downarrowKey)
         
                 
     def rightarrowKey(self, event):
