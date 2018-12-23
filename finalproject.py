@@ -27,7 +27,14 @@ whiteline = LineStyle(1, white)
 
 
 class Ball(Sprite):
-    ball = CircleAsset(
+    ball = CircleAsset(100, whiteline, white)
+    
+    def __init__(self, position):
+        super().__init__(Ball.ball, position)
+        self.vx = 1
+        self.vy = 1
+        self.center = (0.5, 0.5)
+        self.scale = 0.2
 
 class Paddle1(Sprite):
     paddle1 = RectangleAsset(50, 500, thinline, red)
