@@ -133,7 +133,7 @@ class Pong(App):
         
         self.paddle2 = Paddle2((935, 275))
         
-        self.borderleft = Borderleft((97, 250))
+        self.borderleft = Borderleft((97, 275))
     
 myapp = Pong()
 
