@@ -95,9 +95,9 @@ class Pong(App):
         bg = Sprite(bg_asset, (-100, -115))
         bg.scale = 2
         
-        self.paddle1 = Paddle1((100, 300))
+        self.paddle1 = Paddle1((97, 300))
         
-        self.paddle2 = Paddle2((940, 300))
+        self.paddle2 = Paddle2((935, 300))
     
 myapp = Pong()
 
