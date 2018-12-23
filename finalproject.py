@@ -103,8 +103,14 @@ class Paddle2(Sprite):
         
 class Arena(Sprite):
     arena = RectangleAsset(50, 600, whiteline, red)
- 
 
+    def __init__(self, position):
+        super().__init__(Paddle1.paddle1, position)
+        self.vx = 1
+        self.vy = 1
+        self.center = (0.5, 0.5)
+        self.scale = 0.2
+        
 class Pong(App):
     def __init__(self):
         super().__init__()
