@@ -6,7 +6,7 @@ Sources:
 '''
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
-from ggame import ImageAsset, Frame, Sound, SoundAsset, TextAsset
+from ggame import ImageAsset, Frame, Sound, SoundAsset, TextAsset, _ShapeAsset
 
 white = Color(0xffffff, 1.0)
 red = Color(0xff0000, 1.0)
