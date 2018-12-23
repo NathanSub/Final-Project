@@ -54,6 +54,8 @@ class Paddle1(Sprite):
         self.x += self.vx
         self.y += self.vy
 
+class Paddle2(Sprite):
+
 class Pong(App):
     def __init__(self):
         super().__init__()
