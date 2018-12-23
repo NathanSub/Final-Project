@@ -123,15 +123,16 @@ class Bordertop(Sprite):
         self.center = (0.5, 0.5)
         self.scale = 0.2
         
-class Borderright(Sprite):
-    borderright = RectangleAsset(100, 2000, whiteline, red)
+class Borderbottom(Sprite):
+    borderbottom = RectangleAsset(3000, 100, whiteline, meadow)
 
     def __init__(self, position):
-        super().__init__(Borderright.borderright, position)
+        super().__init__(Borderbottom.borderbottom, position)
         self.vx = 1
         self.vy = 1
         self.center = (0.5, 0.5)
         self.scale = 0.2
+        
         
 class Pong(App):
     def __init__(self):
