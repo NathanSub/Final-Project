@@ -122,6 +122,16 @@ class Borderleft(Sprite):
         self.center = (0.5, 0.5)
         self.scale = 0.2
         
+class Borderright(Sprite):
+    borderright = RectangleAsset(100, 2000, whiteline, red)
+
+    def __init__(self, position):
+        super().__init__(Borderright.borderright, position)
+        self.vx = 1
+        self.vy = 1
+        self.center = (0.5, 0.5)
+        self.scale = 0.2
+        
 class Pong(App):
     def __init__(self):
         super().__init__()
@@ -129,11 +139,13 @@ class Pong(App):
         bg = Sprite(bg_asset, (-100, -115))
         bg.scale = 2
         
-        self.paddle1 = Paddle1((97, 275))
+        self.paddle1 = Paddle1((97, 265))
         
-        self.paddle2 = Paddle2((935, 275))
+        self.paddle2 = Paddle2((935, 265))
         
         self.borderleft = Borderleft((80, 265))
+
+        self.borderright = Borderright((950, 265))
     
 myapp = Pong()
 
