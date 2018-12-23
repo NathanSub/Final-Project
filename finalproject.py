@@ -26,6 +26,9 @@ noline = LineStyle(0, black)
 whiteline = LineStyle(1, white)
 
 
+class Ball(Sprite):
+    ball = CircleAsset(
+
 class Paddle1(Sprite):
     paddle1 = RectangleAsset(50, 500, thinline, red)
     
