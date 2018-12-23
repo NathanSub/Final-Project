@@ -92,6 +92,12 @@ class PolygonAsset(_ShapeAsset):
         super().__init__(line, fill)
         self.path = path[:]
         jpath = []
+        if self.path[0] != self.path[-1]:
+            self.path.append(self.path[0])
+        for point in self.path:
+            jpath.extend(point)
+        self.gfx = GFX_Graphics.drawPolygon(jpath).clone()
+        self.gfx.visible = False
         
     
 # class Arena(Sprite):
