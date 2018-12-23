@@ -90,27 +90,6 @@ class Paddle2(Sprite):
         self.x += self.vx
         self.y += self.vy
 
-''' class PolygonAsset(Sprite):
-    def __init__(self, path, line=whiteline, fill=orange):
-        super().__init__(line, fill)
-        self.path = path[:]
-        jpath = []
-        if self.path[0] != self.path[-1]:
-            self.path.append(self.path[0])
-        for point in self.path:
-            jpath.extend(point)
-        self.gfx = GFX_Graphics.drawPolygon(jpath).clone()
-        self.gfx.visible = True          '''
-        
-''' class Arena(Sprite):
-    arena = RectangleAsset(4000, 2000, whiteline, clear)
-
-    def __init__(self, position):
-        super().__init__(Arena.arena, position)
-        self.vx = 1
-        self.vy = 1
-        self.center = (0.5, 0.5)
-        self.scale = 0.2    '''
         
 class Borderleft(Sprite):
     borderleft = RectangleAsset(100, 2000, whiteline, red)
