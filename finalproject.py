@@ -88,7 +88,7 @@ class Paddle2(Sprite):
         self.y += self.vy
 
 class Arena(Sprite):
-    arena = PolygonAsset(path, line=LineStyle(1, BLACK), fill=BLACK)
+    arena = PolygonAsset(path, line=LineStyle(1, BLACK), fill=None)
 
 class Pong(App):
     def __init__(self):
