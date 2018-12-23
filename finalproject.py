@@ -116,7 +116,7 @@ class Pong(App):
         
         self.paddle2 = Paddle2((935, 275))
         
-        self.PolygonAsset = PolygonAsset((97, 400))
+        self.arena = Arena((97, 400))
     
 myapp = Pong()
 
