@@ -35,6 +35,12 @@ class Ball(Sprite):
         self.vy = 1
         self.center = (0.5, 0.5)
         self.scale = 0.2
+        
+    def step(self):
+        self.x += self.vx
+        self.y += self.vy
+        self.rotation += self.vr
+        collision = self.collidingWith
 
 class Paddle1(Sprite):
     paddle1 = RectangleAsset(50, 500, thinline, red)
