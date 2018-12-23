@@ -101,9 +101,9 @@ class Paddle2(Sprite):
         self.gfx = GFX_Graphics.drawPolygon(jpath).clone()
         self.gfx.visible = True          '''
         
-    
-# class Arena(Sprite):
-   # arena = PolygonAsset(path, line=LineStyle(1, BLACK), fill=None)
+class Arena(Sprite):
+    arena = RectangleAsset(50, 600, whiteline, red)
+ 
 
 class Pong(App):
     def __init__(self):
