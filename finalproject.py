@@ -6,7 +6,7 @@ Sources:
 '''
 
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
-from ggame import ImageAsset, Frame, Sound, SoundAsset, TextAsset, ShapeAsset
+from ggame import ImageAsset, Frame, Sound, SoundAsset, TextAsset,
 
 white = Color(0xffffff, 1.0)
 red = Color(0xff0000, 1.0)
@@ -89,7 +89,7 @@ class Paddle2(Sprite):
         self.x += self.vx
         self.y += self.vy
 
-class PolygonAsset(ShapeAsset):
+class PolygonAsset(Sprite):
     def __init__(self, path, line=thinline, fill=red):
         super().__init__(line, fill)
         self.path = path[:]
