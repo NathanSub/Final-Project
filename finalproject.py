@@ -123,7 +123,7 @@ class Pong(App):
         
         self.paddle2 = Paddle2((935, 275))
         
-        self.arena = Arena((600, 200))
+        self.arena = Arena((520, 250))
     
 myapp = Pong()
 
