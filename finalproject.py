@@ -55,6 +55,7 @@ class Paddle1(Sprite):
         self.y += self.vy
 
 class Paddle2(Sprite):
+    paddle2 = RectangleAsset(100, 500, thinline, red)
 
 class Pong(App):
     def __init__(self):
