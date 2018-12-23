@@ -106,7 +106,7 @@ class Arena(Sprite):
     arena = RectangleAsset(50, 600, whiteline, clear)
 
     def __init__(self, position):
-        super().__init__(Paddle1.paddle1, position)
+        super().__init__(Arena.arena, position)
         self.vx = 1
         self.vy = 1
         self.center = (0.5, 0.5)
