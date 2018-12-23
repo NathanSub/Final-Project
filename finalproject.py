@@ -103,7 +103,7 @@ class Paddle2(Sprite):
         self.gfx.visible = True          '''
         
 class Arena(Sprite):
-    arena = RectangleAsset(3000, 3000, whiteline, red)
+    arena = RectangleAsset(4000, 2000, whiteline, red)
 
     def __init__(self, position):
         super().__init__(Arena.arena, position)
