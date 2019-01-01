@@ -115,12 +115,7 @@ class Paddle1(Sprite):
         self.x += self.vx
         self.y += self.vy
 '''        
-    def step(self):
-        self.y += self.vy
-        if self.y > Pong.height-20:
-            self.y = Pong.height-20
-        elif self.y < 0:
-            self.y = 0
+
 
 class Paddle2(Sprite):
     paddle2 = RectangleAsset(50, 500, thinline, red)
