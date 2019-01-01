@@ -95,7 +95,6 @@ class Paddle1(Sprite):
         self.scale = 0.2
 
         Pong.listenKeyEvent('keydown', "w", self.uparrowKey)
-        Pong.listenKeyEvent('keyup', "w", self.uparrowKey)
         Pong.listenKeyEvent('keydown', "s", self.downarrowKey)
         
     def uparrowkey(self,event):
