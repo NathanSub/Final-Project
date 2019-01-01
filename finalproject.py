@@ -56,33 +56,20 @@ class Ball(Sprite):
         else:
             self.setImage(0)
             
-        collidingBordertop = self.collidingWith(Bordertop)
-        if collidingBordertop:
-            self.vx = self.vx*-1
+        self.pcollide = self.collidingWithSprites(Paddle2)
+        if len(self.pcollide):
+            self.pop.play()
+            self.vx = (abs(self.vx)+0.8)
+            self.vy = randint(-3,3)
             
-        collidingBorderbottom = self.collidingWith(Borderbottom)
-        if collidingBorderbottom:
-            self.vx = self.vx*-1
-            
-            
-            
-            
-            
-            
-            
-    def collidingWithSprites(Borderleft, sclass = None):
-        if sclass is None:
-            slist = App.spritelist
-        else:
-            slist = App.getSpritesbyClass(sclass)
-        return list(filter(self.collidingWith, slist))
+        self.pcollide = self.collidingWithSprites(Paddle1)
+        if len(self.pcollide):
+            self.pop.play()
+            self.vx = ((abs(self.vx)+0.5)*-1)
+            self.vy = randint(-3,3)
         
-    def collidingWithSprites(Borderright, sclass = None):
-        if sclass is None:
-            slist = App.spritelist
-        else:
-            slist = App.getSpritesbyClass(sclass)
-        return list(filter(self.collidingWith, slist))
+        if len(Pong.balll) == 1:
+            Pong.screen = 1
 
 class Paddle1(Sprite):
     paddle1 = RectangleAsset(50, 500, thinline, red)
