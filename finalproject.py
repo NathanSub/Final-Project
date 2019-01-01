@@ -128,7 +128,6 @@ class Paddle2(Sprite):
         self.vy+=.2
 
     def step(self):
-        self.x += self.vx
         self.y += self.vy
 
         
