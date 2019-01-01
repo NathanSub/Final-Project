@@ -127,7 +127,6 @@ class Paddle2(Sprite):
     def downarrowKey(self, event):
         self.vy+=.2
 
-
     def step(self):
         self.x += self.vx
         self.y += self.vy
