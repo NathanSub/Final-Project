@@ -98,14 +98,20 @@ class Paddle1(Sprite):
         Pong.listenKeyEvent('keyup', "w", self.uparrowKey)
         Pong.listenKeyEvent('keydown', "s", self.downarrowKey)
         
+    def press(self,event):
+        if event.key == "up arrow":
+            self.vy2 = -5
+        elif event.key == "down arrow":
+            self.vy2 = 5            
                 
-    def uparrowKey(self, event):
+    
+'''    def uparrowKey(self, event):
         self.vy+=-5
         
     def downarrowKey(self, event):
         self.vy+=5
 
-
+'''
     def step(self):
         self.x += self.vx
         self.y += self.vy
