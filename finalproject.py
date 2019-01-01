@@ -117,18 +117,9 @@ class Paddle2(Sprite):
         self.vy = 1
         self.center = (0.5, 0.5)
         self.scale = 0.2
-
-        Pong.listenKeyEvent("keydown", "right arrow", self.rightarrowKey)
-        Pong.listenKeyEvent('keydown', "left arrow", self.leftarrowKey)
+        
         Pong.listenKeyEvent('keydown', "up arrow", self.uparrowKey)
         Pong.listenKeyEvent('keydown', "down arrow", self.downarrowKey)
-        
-                
-    def rightarrowKey(self, event):
-        self.vx+=.2
-        
-    def leftarrowKey(self, event):
-        self.vx+=-.2
         
     def uparrowKey(self, event):
         self.vy+=-.2
