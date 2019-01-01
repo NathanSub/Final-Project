@@ -91,7 +91,6 @@ class Paddle1(Sprite):
         super().__init__(Paddle1.paddle1, position)
         self.vx = 1
         self.vy = 1
-        self.y = 265
         self.center = (0.5, 0.5)
         self.scale = 0.2
 
@@ -101,10 +100,10 @@ class Paddle1(Sprite):
         
                 
     def uparrowKey(self, event):
-        self.y+=-5
+        self.vy+=-5
         
     def downarrowKey(self, event):
-        self.y+=5
+        self.vy+=5
 
 
     def step(self):
@@ -196,9 +195,9 @@ class Pong(App):
         
         self.ball = Ball((515, 265))
         
-        self.paddle1 = Paddle1((97, self.y))
+        self.paddle1 = Paddle1((97, self.vy))
         
-        self.paddle2 = Paddle2((935, self.y))
+        self.paddle2 = Paddle2((935, self.vy))
         
         self.borderleft = Borderleft((80, 265))
 
