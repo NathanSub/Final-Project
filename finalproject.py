@@ -183,9 +183,9 @@ class Pong(App):
         
         self.ball = Ball((515, 265))
         
-        self.paddle1 = Paddle1((97, Paddle1.vy - 250))
+        self.paddle1 = Paddle1((97, 265))
         
-        self.paddle2 = Paddle2((935, Paddle2.vy - 250))
+        self.paddle2 = Paddle2((935, 265))
         
         self.borderleft = Borderleft((80, 265))
 
