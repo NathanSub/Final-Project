@@ -105,7 +105,7 @@ class Paddle1(Sprite):
             self.vy2 = 5            
                 
     
-'''    def uparrowKey(self, event):
+''' def uparrowKey(self, event):
         self.vy+=-5
         
     def downarrowKey(self, event):
