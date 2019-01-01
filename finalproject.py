@@ -57,7 +57,7 @@ class Ball(Sprite):
         if collidingBordertop:
             self.vx = self.vx*-1
             
-        collidingBorderbottom = self.collidingWith(Border)
+        collidingBorderbottom = self.collidingWith(Borderbottom)
         if collidingBorderbottom:
             self.vx = self.vx*-1
             
