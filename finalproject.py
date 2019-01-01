@@ -43,8 +43,8 @@ class Ball(Sprite):
         self.scale = 0.2
         
     def step(self):
-        self.x += self.vx
-        self.y += self.vy
+        self.x += self.vx * 0.7
+        self.y += self.vy * 0.7
         self.rotation += self.vr
         collision = self.collidingWith
         
