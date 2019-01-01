@@ -193,6 +193,12 @@ class Pong(App):
         
         self.borderbottom = Borderbottom ((515, 470))
         
+        Pong.listenKeyEvent("keydown", "space", self.placeball)
+    
+    def placeball(self, event):
+        if len(self.ball) == 0:
+            self.ball.append(Ball((self.width/2, randint(100, self.height-75))))
+        
     
 myapp = Pong()
 
