@@ -98,7 +98,7 @@ class Paddle1(Sprite):
         
                 
     def rightarrowKey(self, event):
-        self.vx+=.2
+        self.vx+=200
         
     def leftarrowKey(self, event):
         self.vx+=-.2
