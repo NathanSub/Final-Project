@@ -185,8 +185,8 @@ class Pong(App):
     def placeball(self, event):
         if len(self.ball) == 0:
             self.ball.append(Ball((self.width/2, randint(100, self.height-75))))
-        
-         if len(self.ball) == 1:
+    def step(self):  
+        if len(self.ball) == 1:
             for b in self.getSpritesbyClass(Ball):
                 b.step()
     
