@@ -53,6 +53,16 @@ class Ball(Sprite):
         else:
             self.setImage(0)
             
+        collidingBordertop = self.collidingWith(Bordertop)
+        if collidingBordertop:
+            self.vx = self.vx*-1
+            
+            
+            
+            
+            
+            
+            
     def collidingWithSprites(Borderleft, sclass = None):
         if sclass is None:
             slist = App.spritelist
