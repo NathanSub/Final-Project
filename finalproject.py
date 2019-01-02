@@ -183,7 +183,7 @@ class Pong(App):
     def step(self):
         if self.paddle1:
             self.paddle1.step()
-        if self.paddle2:
+        elif self.paddle2:
             self.paddle2.step()
 
 myapp = Pong()
