@@ -179,7 +179,12 @@ class Pong(App):
         self.bordertop = Bordertop((515, 60))
         
         self.borderbottom = Borderbottom ((515, 470))
-        
+    
+    def step(self):
+        if self.paddle1:
+            self.paddle1.step()
+        if self.paddle2:
+            self.paddle2.step()
 
 myapp = Pong()
 
