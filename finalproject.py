@@ -180,9 +180,9 @@ class Pong(App):
         
         self.borderbottom = Borderbottom ((515, 470))
         
-        Pong.listenKeyEvent("keydown", "space", self.placeball)
+        Pong.listenKeyEvent("keydown", "space", self.ballmid)
     
-    def placeball(self, event):
+    def ballmid(self, event):
         if len(self.ball) == 0:
             self.ball.append(Ball((self.width/2, randint(100, self.height-75))))
     def step(self):  
