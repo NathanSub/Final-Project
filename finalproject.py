@@ -182,9 +182,9 @@ class Pong(App):
             self.ball.step()
             if not self.disap and self.ball.collidingWith(self.Borderbottom):
                 self.disap = True
-                explode = print("Hello!")
+                disap = print("Hello!")
                 self.ball.destroy()
-                self.ball = explode
+                self.ball = disap
 
 myapp = Pong()
 
