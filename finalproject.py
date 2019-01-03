@@ -56,18 +56,7 @@ class Ball(Sprite):
         else:
             self.setImage(0)
             
-        self.pcollide = self.collidingWithSprites(Paddle2)
-        if len(self.pcollide):
-            self.pop.play()
-            self.vx = (abs(self.vx)+0.8)
-            self.vy = randint(-3,3)
-            
-        self.pcollide = self.collidingWithSprites(Paddle1)
-        if len(self.pcollide):
-            self.pop.play()
-            self.vx = ((abs(self.vx)+0.5)*-1)
-            self.vy = randint(-3,3)
-        
+
 class Paddle1(Sprite):
     paddle1 = RectangleAsset(50, 500, thinline, red)
     
