@@ -85,10 +85,12 @@ class Paddle1(Sprite):
         Pong.listenKeyEvent('keydown', "s", self.downarrowKey)
         
     def uparrowKey(self, event):
-        self.y+=-10
+        if self.y >= 120:
+            self.y+=-10
         
     def downarrowKey(self, event):
-        self.y+=10
+        if self.y <= 420:
+            self.y+=10
 
     def step(self):
         self.y += self.vy
