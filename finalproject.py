@@ -47,6 +47,12 @@ class Ball(Sprite):
         self.y += self.vy * 0.7
         self.rotation += self.vr
         collision = self.collidingWith
+    def collidingWithSprites(sun, sclass = None):
+        if sclass is None:
+            slist = App.spritelist
+        else:
+            slist = App.getSpritesbyClass(sclass)
+        return list(filter(self.collidingWith, slist))
 
 
 class Paddle1(Sprite):
