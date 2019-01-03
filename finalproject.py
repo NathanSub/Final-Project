@@ -168,6 +168,8 @@ class Pong(App):
         self.bordertop = Bordertop((515, 60))
         
         self.borderbottom = Borderbottom ((515, 470))
+        
+        self.disap = False
     
     def step(self):
         if self.paddle1:
@@ -178,8 +180,8 @@ class Pong(App):
             
         if self.ball:
             self.ball.step()
-            if not self.explosion and self.ball.collidingWith(self.Borderbottom):
-                self.explosion = True
+            if not self.disap and self.ball.collidingWith(self.Borderbottom):
+                self.disap = True
                 explode = print("Hello!")
                 self.ball.destroy()
                 self.ball = explode
