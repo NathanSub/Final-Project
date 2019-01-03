@@ -47,7 +47,7 @@ class Ball(Sprite):
         self.y += self.vy * 0.7
         self.rotation += self.vr
         collision = self.collidingWith
-        
+
 
 class Paddle1(Sprite):
     paddle1 = RectangleAsset(50, 500, thinline, red)
