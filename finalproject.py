@@ -47,7 +47,7 @@ class Ball(Sprite):
         self.y += self.vy * 0.7
         self.rotation += self.vr
         collision = self.collidingWith
-    def collidingWithSprites(sun, sclass = None):
+    def collidingWithSprites(borderbottom, sclass = None):
         if sclass is None:
             slist = App.spritelist
         else:
