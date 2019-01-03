@@ -48,9 +48,10 @@ class Ball(Sprite):
         self.rotation += self.vr
         collision = self.collidingWith
         
-    def collidingWithSprites(borderbottom, sclass = borderbottom):
+    def collidingWithSprites(borderbottom, sclass = None):
         if sclass is None:
             slist = App.spritelist
+            print("hello")
         else:
             slist = App.getSpritesbyClass(sclass)
         return list(filter(self.collidingWith, slist))
