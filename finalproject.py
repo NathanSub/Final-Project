@@ -112,7 +112,8 @@ class Paddle2(Sprite):
             self.y+=-10
         
     def downarrowKey(self, event):
-        self.y+=10
+        if self.y <= 300:
+            self.y+=10
 
     def step(self):
         self.y += self.vy
