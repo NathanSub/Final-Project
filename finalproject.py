@@ -48,14 +48,6 @@ class Ball(Sprite):
         self.rotation += self.vr
         collision = self.collidingWith
         
-        if self.thrust == 5:
-            self.setImage(self.thrustframe)
-            self.thrustframe += 1
-            if self.thrustframe == 4:
-                self.thrustframe = 1
-        else:
-            self.setImage(0)
-            
 
 class Paddle1(Sprite):
     paddle1 = RectangleAsset(50, 500, thinline, red)
