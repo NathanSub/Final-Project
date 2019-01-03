@@ -189,6 +189,9 @@ class Pong(App):
             
         if self.paddle2:
             self.paddle2.step()
+            
+        if self.ball:
+            self.ball.step()
 
 myapp = Pong()
 
