@@ -68,7 +68,7 @@ class Ball(Sprite):
             self.vx = ((abs(self.vx)+0.5)*-1)
             self.vy = randint(-3,3)
         
-        if len(Pong.balll) == 1:
+        if len(Pong.ball) == 1:
             Pong.screen = 1
 
 class Paddle1(Sprite):
