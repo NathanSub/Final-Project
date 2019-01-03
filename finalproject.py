@@ -37,7 +37,7 @@ class Ball(Sprite):
         self.vx = 1
         self.vy = 1
         self.vr = 0.01
-        self.thrust = 0
+        self.thrust = 5
         self.thrustframe = 1
         self.center = (0.5, 0.5)
         self.scale = 0.2
