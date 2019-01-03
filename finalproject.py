@@ -178,6 +178,11 @@ class Pong(App):
             
         if self.ball:
             self.ball.step()
+            if not self.explosion and self.ball.collidingWith(self.Borderbottom):
+                self.explosion = True
+                explode = print("Hello!")
+                self.rocketship.destroy()
+                self.rocketship = explode
 
 myapp = Pong()
 
