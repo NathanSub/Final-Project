@@ -231,7 +231,7 @@ class Pong(App):
         
         self.disap = False
         
-        Pong.listenKeyEvent('keydown', 'space', self.spaceKey)
+        Pong.listenKeyEvent('keypress', 'space', self.spaceKey)
         
     def spaceKey(self, event):
         def step(self):
