@@ -13,6 +13,8 @@ https://github.com/hackmeehan/Final-Project/blob/master/hackmeehan.py
 from ggame import App, Color, LineStyle, Sprite, RectangleAsset, CircleAsset, EllipseAsset, PolygonAsset
 from ggame import ImageAsset, Frame, Sound, SoundAsset, TextAsset
 
+import random
+
 white = Color(0xffffff, 1.0)
 clear = Color(0xffffff, 0)
 red = Color(0xff0000, 1.0)
