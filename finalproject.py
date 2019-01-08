@@ -34,7 +34,7 @@ class Ball(Sprite):
     
     def __init__(self, position):
         super().__init__(Ball.ball, position)
-        self.vx = 1
+        self.vx = 20
         self.vy = 1
         self.vr = 0.01
         self.thrust = 5
@@ -131,7 +131,7 @@ class Paddle2(Sprite):
     
     def __init__(self, position):
         super().__init__(Paddle2.paddle2, position)
-        self.vx = 20
+        self.vx = 0
         self.vy = 0
         self.center = (0.5, 0.5)
         self.scale = 0.2
