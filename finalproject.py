@@ -32,7 +32,7 @@ whiteline = LineStyle(1, white)
 
 
 class Ball(Sprite):
-    ball = EllipseAsset(30, 30, whiteline, white)
+    ball = EllipseAsset(50, 50, whiteline, white)
     
     def __init__(self, position):
         super().__init__(Ball.ball, position)
