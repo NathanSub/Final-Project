@@ -100,22 +100,7 @@ class Paddle1(Sprite):
         self.scale = 0.2
         self.downpressed = False
         self.uppressed =  False
-'''
-        Pong.listenKeyEvent('keydown', "w", self.uparrowKey)
-        Pong.listenKeyEvent('keydown', "s", self.downarrowKey)
-        
-    def uparrowKey(self, event):
-        if self.y >= 120:
-            self.y+=-10
-        
-    def downarrowKey(self, event):
-        if self.y <= 410:
-            self.y+=10
 
-    def step(self):
-        self.y += self.vy
-'''
-        
         Pong.listenKeyEvent('keydown', "w", self.uparrowKey)
         Pong.listenKeyEvent('keyup', "w", self.uparrowKeyisUp)
         Pong.listenKeyEvent('keyup', "s", self.downarrowKeyisUp)
