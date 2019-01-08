@@ -123,9 +123,9 @@ class Paddle1(Sprite):
 
     def step(self):
         if self.uppressed and self.y >= 100:
-            self.y -= 1
+            self.y -= 10
         if self.downpressed and self.y <= 440:
-            self.y += 1
+            self.y += 10
     
 
 class Paddle2(Sprite):
