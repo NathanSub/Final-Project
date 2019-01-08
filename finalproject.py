@@ -98,7 +98,9 @@ class Paddle1(Sprite):
         self.vy = 0
         self.center = (0.5, 0.5)
         self.scale = 0.2
-
+        self.downpressed = False
+        self.uppressed =  False
+'''
         Pong.listenKeyEvent('keydown', "w", self.uparrowKey)
         Pong.listenKeyEvent('keydown', "s", self.downarrowKey)
         
@@ -112,7 +114,32 @@ class Paddle1(Sprite):
 
     def step(self):
         self.y += self.vy
+'''
+        
+        Pong.listenKeyEvent('keydown', "w", self.uparrowKey)
+        Pong.listenKeyEvent('keyup', "w", self.uparrowKeyisUp)
+        Pong.listenKeyEvent('keyup', "s", self.downarrowKeyisUp)
+        Pong.listenKeyEvent('keydown', "s", self.downarrowKey)
+        
+    def uparrowKeyisUp(self, event):
+        self.uppressed = False
+    
+    def downarrowKeyisUp(self, event):
+        self.downpressed = False
 
+    def uparrowKey(self, event):
+        self.uppressed = True
+    
+    def downarrowKey(self, event):
+        self.downpressed = True
+
+
+    def step(self):
+        if self.uppressed and self.y >= 100:
+            self.y -= 1
+        if self.downpressed and self.y <= 440:
+            self.y += 1
+    
 
 class Paddle2(Sprite):
     paddle2 = RectangleAsset(50, 500, thinline, red)
