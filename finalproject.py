@@ -46,11 +46,11 @@ class Ball(Sprite):
     
     Pong.listenKeyEvent('keydown', "space", self.spaceKey)
     
-    def spaceKey
-       
-    def step(self):
+    def spaceKey:
         self.x += self.vx * 0.7
         self.y += self.vy * 0.7
+       
+    def step(self):
         self.rotation += self.vr
         collision = self.collidingWith
         
