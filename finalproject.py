@@ -46,7 +46,7 @@ class Ball(Sprite):
     
         Pong.listenKeyEvent('keydown', 'space', self.spaceKey)
     
-    def spaceKey:
+    def spaceKey(self, event):
         self.x += self.vx * 0.7
         self.y += self.vy * 0.7
        
