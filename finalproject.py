@@ -35,7 +35,7 @@ class Ball(Sprite):
     def __init__(self, position):
         super().__init__(Ball.ball, position)
         self.vx = 20
-        self.vy = 1
+        self.vy = 0
         self.vr = 0.01
         self.thrust = 5
         self.thrustframe = 1
