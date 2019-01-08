@@ -197,7 +197,6 @@ class Bordertop(Sprite):
         self.scale = 0.2
         self.visible = False
         
-        
 class Borderbottom(Sprite):
     borderbottom = RectangleAsset(4200, 100, whiteline, green)
 
