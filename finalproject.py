@@ -44,9 +44,9 @@ class Ball(Sprite):
         self.center = (0.5, 0.5)
         self.scale = 0.2
     
-        Pong.listenKeyEvent('keydown', 'space', self.spaceKey)
+'''      Pong.listenKeyEvent('keydown', 'space', self.spaceKey)
     
-    def spaceKey(self, event):
+    def spaceKey(self, event):   '''
 
        
     def step(self):
@@ -235,6 +235,12 @@ class Pong(App):
         self.borderbottom = Borderbottom ((515, 470))
         
         self.disap = False
+        
+        Pong.listenKeyEvent('keydown', 'space', self.spaceKey)
+        
+    def spaceKey(self, event):
+        if self.ball:
+            self.ball.step()
     
     def step(self):
         if self.paddle1:
@@ -243,8 +249,8 @@ class Pong(App):
         if self.paddle2:
             self.paddle2.step()
             
-        if self.ball:
-            self.ball.step()
+
+    
 
 
 myapp = Pong()
