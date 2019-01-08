@@ -43,11 +43,6 @@ class Ball(Sprite):
         self.thrustframe = 1
         self.center = (0.5, 0.5)
         self.scale = 0.2
-    
-'''      Pong.listenKeyEvent('keydown', 'space', self.spaceKey)
-    
-    def spaceKey(self, event):   '''
-
        
     def step(self):
         self.x += self.vx * 0.7
