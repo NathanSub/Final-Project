@@ -232,15 +232,10 @@ class Pong(App):
             
         if self.paddle2:
             self.paddle2.step()
-'''            
+            
         if self.ball:
             self.ball.step()
-            if not self.disap and self.ball.collidingWith(self.Borderbottom):
-                self.disap = True
-                disap = print("Hello!")
-                self.ball.destroy()
-                self.ball = disap
-'''
+
 
 myapp = Pong()
 
