@@ -48,13 +48,45 @@ class Ball(Sprite):
         self.rotation += self.vr
         collision = self.collidingWith
         
-    def collidingWithSprites(Borderbottom, sclass = None):
-        if sclass is None:
-            slist = App.spritelist
-            print("hello")
-        else:
-            slist = App.getSpritesbyClass(sclass)
-        return list(filter(self.collidingWith, slist))
+          
+        collisionleft = self.collidingWith(myapp.borderleft) 
+        collisionright = self.collidingWith(myapp.borderright)
+        hitspaddle2 = self.collidingWith(myapp.paddle2)
+        hitspaddle1 = self.collidingWith(myapp.paddle1)
+        hitsbordertop = self.collidingWith(myapp.bordertop)
+        hitsborderbott = self.collidingWith(myapp.borderbottom)
+        
+        deletemaybe = random.randint(0, 1)
+    
+        if hitspaddle2:
+            self.vx = -30
+            if deletemaybe == 0:
+                self.vy = 3
+            elif deletemaybe == 1:
+                self.vy = -3
+        
+        elif hitspaddle1:
+            self.vx = 30
+            if deletemaybe == 0:
+                self.vy = 3
+            elif deletemaybe == 1:
+                self.vy = -3
+        
+        
+        elif collisionright:
+            self.vx = 0
+            self.visible = False
+        
+        elif collisionleft:
+            self.vx = 0
+            self.visible = False
+        
+        elif hitsbordertop:
+            self.vy = self.vy*-1
+        
+        elif hitsborderbott:
+            self.vy = self.vy*-1
+
 
 
 class Paddle1(Sprite):
