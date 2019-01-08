@@ -234,17 +234,15 @@ class Pong(App):
         Pong.listenKeyEvent('keydown', 'space', self.spaceKey)
         
     def spaceKey(self, event):
-        if self.ball:
-            self.ball.step()
-    
-    def step(self):
-        if self.paddle1:
-            self.paddle1.step()
+        def step(self):
+            if self.paddle1:
+                self.paddle1.step()
             
-        if self.paddle2:
-            self.paddle2.step()
-            
-
+            if self.paddle2:
+                self.paddle2.step()
+                
+            if self.ball:
+                self.ball.step()
     
 
 
