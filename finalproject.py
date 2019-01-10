@@ -92,7 +92,7 @@ class Ball(Sprite):
 
 
 class Paddle1(Sprite):
-    paddle1 = RectangleAsset(50, 500, thinline, red)
+    paddle1 = RectangleAsset(50, 400, thinline, red)
     
     def __init__(self, position):
         super().__init__(Paddle1.paddle1, position)
@@ -129,7 +129,7 @@ class Paddle1(Sprite):
     
 
 class Paddle2(Sprite):
-    paddle2 = RectangleAsset(50, 500, thinline, red)
+    paddle2 = RectangleAsset(50, 400, thinline, red)
     
     def __init__(self, position):
         super().__init__(Paddle2.paddle2, position)
