@@ -78,6 +78,10 @@ class Ball(Sprite):
                 self.vy = 3
             elif deletemaybe == 1:
                 self.vy = -3
+            elif rand == 2:
+                self.vy = 7
+            elif rand == 3:
+                self.vy = -7
         
         
         elif collisionright:
