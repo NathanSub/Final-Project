@@ -67,9 +67,9 @@ class Ball(Sprite):
             elif rand == 1:
                 self.vy = -3
             elif rand == 2:
-                self.vy = 6
+                self.vy = 4
             elif rand == 3:
-                self.vy = -6
+                self.vy = -5
         
         
         elif hitspaddle1:
@@ -79,9 +79,9 @@ class Ball(Sprite):
             elif rand == 1:
                 self.vy = -3
             elif rand == 2:
-                self.vy = 7
+                self.vy = 4
             elif rand == 3:
-                self.vy = -7
+                self.vy = -5
         
         
         elif collisionright:
